@@ -22,7 +22,7 @@ def run_command():
 
 
 def main():
-    import requests
+    import face_recognition
     import streamlit as st
 
     st.write(
