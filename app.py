@@ -2,6 +2,12 @@ import subprocess
 
 
 def run_command():
+    # Install cmake
+    try:
+        subprocess.run(["pip", "install", "cmake"])
+    except subprocess.CalledProcessError as e:
+        print(f"Error installing cmake: {e}")
+
     # Install dlib
     try:
         subprocess.run(["pip", "install", "dlib"])
